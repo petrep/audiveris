@@ -346,7 +346,7 @@ public abstract class WellKnowns
 
         switch (kind) {
         case DATA:
-            return Paths.get(home + "/Audiveris" + TOOL_PREFIX);
+            return Paths.get(home + "/Tools/audiveris" + TOOL_PREFIX);
 
         case CONFIG:
             return Paths.get(home + "/.config" + TOOL_PREFIX);
