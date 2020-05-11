@@ -842,7 +842,7 @@ public class SheetStub
             if (ex.getCause() instanceof StepException) {
                 logger.info("StepException cause detected in " + neededSteps);
             } else {
-                logger.warn("Error in performing {} {}", neededSteps, ex.toString(), ex);
+                logger.warn("(SheetStub.java) Error in performing {} {}", neededSteps, ex.toString(), ex);
             }
         } catch (Exception ex) {
             logger.warn("Error in performing {} {}", neededSteps, ex.toString(), ex);

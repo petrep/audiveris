@@ -243,10 +243,12 @@ public class TesseractOCR
     {
         // First, try to use TESSDATA_PREFIX environment variable
         // which might denote a Tesseract installation
+        logger.warn("findOcrFolder method starts");
         final String TESSDATA_PREFIX = "TESSDATA_PREFIX";
         final String tessPrefix = System.getenv(TESSDATA_PREFIX);
 
         if (tessPrefix != null) {
+            logger.warn("tessPrefix != null");
             Path dir = Paths.get(tessPrefix);
 
             if (Files.isDirectory(dir)) {
@@ -261,9 +263,10 @@ public class TesseractOCR
 
             return Paths.get(System.getenv(pf32)).resolve("tesseract-ocr");
         } else if (WellKnowns.LINUX) {
+            logger.warn("WellKnowns.LINUX");
             // Scan common Linux TESSDATA locations
             final String[] linuxOcrLocations = {
-                "/usr/share/tesseract-ocr", // Debian, Ubuntu and derivatives
+                "/usr/share/tesseract-ocr/3.05", // Debian, Ubuntu and derivatives
                 "/usr/share", // OpenSUSE
                 "/usr/share/tesseract" // Fedora
             };

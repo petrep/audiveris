@@ -1419,7 +1419,7 @@ public class Book
         } catch (ProcessingCancellationException pce) {
             throw pce;
         } catch (Exception ex) {
-            logger.warn("Error in performing " + target, ex);
+            logger.warn("(Book.java) Error in performing " + target, ex);
         }
 
         return false;

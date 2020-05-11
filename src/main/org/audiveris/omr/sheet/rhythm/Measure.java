@@ -594,6 +594,11 @@ public class Measure
         }
 
         // This should not occur in a standard staff
+        
+        if (point.x > 300){
+            clef = measure.getFirstMeasureClef(1);            
+        }
+        
         String msg = "No clef found in " + staff + " before " + point;
         logger.warn(msg);
         throw new IllegalStateException(msg);
