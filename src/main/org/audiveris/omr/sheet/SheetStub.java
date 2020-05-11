@@ -828,6 +828,7 @@ public class SheetStub
             for (final Step step : neededSteps) {
                 watch.start(step.name());
                 StepMonitoring.notifyMsg(step.toString());
+                logger.info("step.toString-> " + step.toString());
                 logger.debug("reachStep {} towards {}", step, target);
                 doOneStep(step);
             }
