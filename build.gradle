@@ -42,8 +42,8 @@ allprojects {
 }
 
 run {
-    minHeapSize = '512m'
-    maxHeapSize = '1g'
+    minHeapSize = '4g'
+    maxHeapSize = '4g'
 
     // Retrieve CLI arguments from cmdLineArgs property if any
     if (project.hasProperty("cmdLineArgs")) {
