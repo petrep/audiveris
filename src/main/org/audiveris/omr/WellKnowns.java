@@ -58,22 +58,22 @@ public abstract class WellKnowns
     //----------//
     //
     /** Application company name: {@value}. */
-    public static final String COMPANY_NAME = ProgramId.COMPANY_NAME;
+    public static final String COMPANY_NAME = "AudiverisLtd";
 
     /** Application company id: {@value}. */
-    public static final String COMPANY_ID = ProgramId.COMPANY_ID;
+    public static final String COMPANY_ID = "audiveris";
 
     /** Application name: {@value}. */
-    public static final String TOOL_NAME = ProgramId.PROGRAM_NAME;
+    public static final String TOOL_NAME = "audiveris";
 
     /** Application id: {@value}. */
-    public static final String TOOL_ID = ProgramId.PROGRAM_ID;
+    public static final String TOOL_ID = "audiveris";
 
     /** Application reference: {@value}. */
-    public static final String TOOL_REF = ProgramId.PROGRAM_VERSION;
+    public static final String TOOL_REF = "1.0";
 
     /** Application build: {@value}. */
-    public static final String TOOL_BUILD = ProgramId.PROGRAM_BUILD;
+    public static final String TOOL_BUILD = "1.0";
 
     /** Specific prefix for application folders: {@value}. */
     private static final String TOOL_PREFIX = "/" + COMPANY_ID + "/" + TOOL_ID;

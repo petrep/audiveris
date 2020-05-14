@@ -22,7 +22,7 @@
 package org.audiveris.omr.sheet;
 
 import org.audiveris.omr.OMR;
-import org.audiveris.omr.ProgramId;
+//import org.audiveris.omr.ProgramId;
 import org.audiveris.omr.WellKnowns;
 import org.audiveris.omr.classifier.Annotations;
 import org.audiveris.omr.classifier.SampleRepository;
@@ -2092,7 +2092,7 @@ public class Book
         } else {
             if (constants.checkBookVersion.isSet()) {
                 // Check compatibility between file version and program version
-                if (!areVersionsCompatible(ProgramId.PROGRAM_VERSION, version)) {
+                if (!areVersionsCompatible("5.1.1", version)) {
                     if (constants.resetOldBooks.isSet()) {
                         final String msg = bookPath + " version " + version;
                         logger.warn(msg);
