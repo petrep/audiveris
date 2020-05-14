@@ -61,7 +61,7 @@ public abstract class WellKnowns
     public static final String COMPANY_NAME = "AudiverisLtd";
 
     /** Application company id: {@value}. */
-    public static final String COMPANY_ID = "audiveris";
+    public static final String COMPANY_ID = "AudiverisLtd";
 
     /** Application name: {@value}. */
     public static final String TOOL_NAME = "audiveris";
